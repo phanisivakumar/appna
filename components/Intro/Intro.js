@@ -17,7 +17,7 @@ export default class Intro extends React.Component {
         return (
             <View style={styles.container}>
                 <View style={styles.headerArea}>
-                    <Text style={styles.headerText}>appna</Text>
+                    <Text style={styles.headerText}>The Wall Poster</Text>
                 </View>
                 {/* <View style={styles.introImg}>
                     <Image source={require('../images/intro-img.png')} />
@@ -34,18 +34,18 @@ export default class Intro extends React.Component {
                     >
                         <View style={styles.carasolBox}>
                             <Image style={styles.introImg} source={require('../images/intro-img.png')} />
-                            <Text style={styles.carasolTilte}>Get Organised</Text>
-                            <Text style={styles.carasolTxt}>Industry's standard dummy text ever since the 1500s</Text>
+                            <Text style={styles.carasolTilte}>Sign up</Text>
+                            <Text style={styles.carasolTxt}>Let us know who you are?</Text>
                         </View>
                         <View style={styles.carasolBox}>
                             <Image style={styles.introImg} source={require('../images/intro-img.png')} />
-                            <Text style={styles.carasolTilte}>Get Organised</Text>
-                            <Text style={styles.carasolTxt}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</Text>
+                            <Text style={styles.carasolTilte}>Wall</Text>
+                            <Text style={styles.carasolTxt}>Your favorite place to see job posters.</Text>
                         </View>
                         <View style={styles.carasolBox}>
                             <Image style={styles.introImg} source={require('../images/intro-img.png')} />
-                            <Text style={styles.carasolTilte}>Get Organised</Text>
-                            <Text style={styles.carasolTxt}>Standard Lorem Ipsum has been the industry's dummy text ever since the 1500s</Text>
+                            <Text style={styles.carasolTilte}>Support</Text>
+                            <Text style={styles.carasolTxt}>We are always there for you!</Text>
                         </View>                        
                     </SwiperFlatList>
                 </View>
@@ -55,12 +55,12 @@ export default class Intro extends React.Component {
                             <Text style={styles.continueTxt}>CONTINUE</Text>
                         </TouchableOpacity>
                     </View>
-                    <View style={styles.footerLinks}>
+                    {/* <View style={styles.footerLinks}>
                         <Text style={styles.footerTxt}>Already a user?</Text>
                         <TouchableOpacity>
                             <Text style={styles.linkTxt}>Log into App</Text>
                         </TouchableOpacity>
-                    </View>
+                    </View> */}
                 </View>
             </View>
         );

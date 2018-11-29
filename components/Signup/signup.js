@@ -25,11 +25,11 @@ export default class Signup extends React.Component {
         const { Email, Name, Mobile, Password } = this.state;
 
         return (
-            <KeyboardAvoidingView behavior="padding" style={styles.container}>
+            // <KeyboardAvoidingView behavior="padding" style={styles.container}>
                 <ScrollView>
                     <Form style={styles.loginForm}>
                         <TextField
-                            label='Name'
+                            label='First Name  <space> Last Name'
                             baseColor={Color.primary}
                             tintColor={Color.primary}
                             labelHeight={26}
@@ -52,23 +52,23 @@ export default class Signup extends React.Component {
                             value={Mobile}
                             onChangeText={(Mobile) => this.setState({ Mobile })}
                         />
-                        <TextField
+                        {/* <TextField
                             label='Password'
                             baseColor={Color.primary}
                             tintColor={Color.primary}
                             labelHeight={26}
                             value={Password}
                             onChangeText={(Password) => this.setState({ Password })}
-                        />
+                        /> */}
                     </Form >
 
                     <View style={styles.fbArea}>
                         <TouchableOpacity style={styles.loginButt} onPress={() => this.props.navigation.navigate('Index')}>
-                            <Text style={styles.loginButtTxt}>SIGNUP</Text>
+                            <Text style={styles.loginButtTxt}>SIGN UP</Text>
                         </TouchableOpacity>
                     </View>
                 </ScrollView>
-            </KeyboardAvoidingView>
+            // </KeyboardAvoidingView>
         );
     }
 }

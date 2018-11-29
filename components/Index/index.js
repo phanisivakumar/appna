@@ -8,6 +8,7 @@ import Menu, { MenuItem, MenuDivider } from 'react-native-material-menu';
 import { Color } from '@common';
 import Feed from '../Feed/Feed';
 import Trending from '../Trending/Trending'
+import Signup from '../Signup/signup'
 
 class Index extends React.Component {
     static navigationOptions = ({ navigation }) => ({        
@@ -28,7 +29,7 @@ class Index extends React.Component {
 
                 <View style={styles.headerBg}>                    
                     <View style={styles.appTitle}>
-                        <Text style={styles.title}>appna</Text>
+                        <Text style={styles.title}>The Wall Poster</Text>
                     </View>
                     <View style={styles.userIcon}>                          
                         <Button transparent>
@@ -38,10 +39,22 @@ class Index extends React.Component {
                 </View>
 
                 <Tabs tabBarBackgroundColor={'#20C0E2'} renderTabBar={() => <ScrollableTab />}>
-                    <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="Home">
-                        <Text>Home</Text>
+                    <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="SignUp">
+                        <View>
+                            <Signup />
+                        </View>
                     </Tab>
-                    <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="Trending">
+                    <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="Wall">
+                        <Text>Wall</Text>
+                    </Tab> 
+                    <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="Contact">
+                        <Text>Relationship Managers</Text>
+                        <Text>First Contact</Text>
+                        <Text>Sunil: +91 9885470879</Text>
+                        <Text>Second Contact</Text>
+                        <Text>Phani: +91 9177174570</Text>
+                    </Tab>  
+                    {/* <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="Trending">
                         <View>
                             <Trending />
                         </View>
@@ -53,7 +66,7 @@ class Index extends React.Component {
                     </Tab>
                     <Tab textStyle={{ color: '#fff' }} tabStyle={{ backgroundColor: Color.primary, }} activeTabStyle={{ backgroundColor: Color.primary }} heading="Sponsored">
                         <Text>Sponsored</Text>
-                    </Tab>                                        
+                    </Tab>                                         */}
                 </Tabs>
             </Container>
 
